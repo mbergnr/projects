@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#show").click(function() {
+			$("#panel").slideToggle("slow");
+			
+	});		
+});
+</script>
+
+<style> 
+#panel{
+    padding: 5px;
+    text-align: center;
+    border: dashed 5px powderblue;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<button id="show" type="button" class="btn btn-primary">Click here!</button>
+<div id="panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ex, aspernatur. Eos quaerat, illo laboriosam reprehenderit aut ipsam asperiores porro et aspernatur temporibus dolorem minus, fugit adipisci odit, quidem fugiat.</div>
+
+</body>
+</html>
