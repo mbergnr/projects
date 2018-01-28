@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title></title>
+
+<script >
+	$(document).ready(function() {
+		$('button').click(function() {
+			$text1 = $('input').val();
+				$("ol").append("<li>"+$text1+"</li>");
+
+			
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="text" id="input" value="Enter next item">
+	 <button id="btn1">Insert item</button>
+
+	<ol>
+		<li>First list item</li>
+		<li>Second list item</li>
+		<li>Third list item</li>
+	</ol>
+
+</body>
+</html>
